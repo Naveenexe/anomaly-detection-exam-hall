@@ -128,9 +128,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - your.email@example.com
+Your Name - watarenaveen@gmail.com
 
-Project Link: [https://github.com/yourusername/anomaly-detection-exam-hall](https://github.com/yourusername/anomaly-detection-exam-hall)
+Project Link: [https://github.com/Naveenexe/anomaly-detection-exam-hall](https://github.com/yourusername/anomaly-detection-exam-hall)
 
 ---
 
