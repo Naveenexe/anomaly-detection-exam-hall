@@ -1,21 +1,88 @@
 # 🎯 Anomaly Detection in Exam Hall
 
-An AI-powered real-time academic integrity monitoring system that uses computer vision and deep learning to detect suspicious behaviors during examinations.
+## 🚀 **Enhanced Version 2.1**
+
+An advanced AI-powered academic integrity monitoring system that uses state-of-the-art computer vision and deep learning to analyze classroom videos and detect suspicious behaviors during examinations.
 
 ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.13.0-orange.svg)
-![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green.svg)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15.0-orange.svg)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.8.1+-green.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.28.1+-red.svg)
+![Status](https://img.shields.io/badge/status-production--ready-success.svg)
+
+### ✨ **What's New in Version 2.1**
+- 🎨 **Complete UI Overhaul** - Modern, responsive design with gradient themes
+- 🛡️ **Enhanced Error Handling** - Comprehensive error management and user feedback
+- ⚙️ **Configuration System** - External config file for easy parameter tuning
+- 📊 **Advanced Analytics** - Interactive dashboards with detailed visualizations
+- 🔧 **Improved Performance** - Memory optimization and faster processing
+- 📝 **Professional Logging** - Complete logging system for debugging
+- ✅ **Input Validation** - Robust validation for all user inputs
+- 🎯 **Better Accuracy** - Improved model architecture and training
+ - 📁 **Reorganized Structure** - Introduced `src/`, `models/`, `outputs/`, `logs/`, `config/`
+ - 🧩 **Modular Imports** - All core modules now imported via `src.*`
+ - 🧪 **Best Model Preference** - Auto-loads `models/best_classroom_model.h5` if present
+ - 🔐 **Authentication & Audit** - Role-based access (admin / proctor) + JSON audit trail
+ - 🖼️ **Snapshot Archiving** - Older snapshots auto-moved to `history/` before new run
+ - 📄 **PDF & CSV Export** - One-click report generation with charts & anomaly samples
+ - 🗑️ **Privacy Blur Removed** - Only pixelation / black-box retained (UI privacy page retired)
+ - 📊 **Distribution Logic Refined** - Zero-count classes shown in bar chart, pie limited to detected behaviors
 
 ## 🚀 Features
 
-- **Real-time Behavior Detection**: Monitors 9 different types of academic misconduct behaviors
-- **CNN-based Classification**: Deep learning model with high accuracy detection
-- **Live Video Analysis**: Real-time processing using webcam or uploaded videos
-- **Professional Web Interface**: Multi-page Streamlit application with interactive dashboards
-- **Automated Alert System**: Instant notifications to examination supervisors
-- **Comprehensive Reporting**: Detailed analytics with confidence scoring and timestamps
-- **Anomaly Snapshots**: Automatic capture of suspicious activities
+### 🤖 **AI & Machine Learning**
+- **Advanced CNN Architecture**: 4-layer convolutional neural network with batch normalization
+- **9 Behavior Classes**: Comprehensive coverage of academic misconduct patterns
+- **High Accuracy**: 77%+ validation accuracy with continuous improvement
+- **Real-time Processing**: Optimized for live video analysis with frame skipping
+- **Confidence Scoring**: Detailed confidence metrics for each detection
+
+### 🎨 **Enhanced User Interface**
+- **Modern Design**: Gradient-based UI with professional styling
+- **Responsive Layout**: Works seamlessly on desktop and mobile devices
+- **Interactive Dashboards**: Advanced charts and visualizations using Plotly
+- **Real-time Metrics**: Live status indicators and performance monitoring
+- **Intuitive Navigation**: Clean sidebar navigation with contextual help
+
+### 🚨 **Instant Alert System**
+- **Real-time Notifications**: Immediate alerts when anomalies are detected
+- **Detailed Anomaly Reports**: Comprehensive analysis with behavior breakdown
+- **Visual Dashboard Alerts**: Interactive alerts with timeline visualization
+- **Snapshot Integration**: Automatic capture of suspicious activities
+
+### 📊 **Analytics & Reporting**
+- **Comprehensive Dashboards**: Real-time monitoring with key performance indicators
+- **Anomaly Timeline**: Interactive timeline visualization of detected behaviors
+- **Behavior Distribution**: Pie charts and statistical analysis
+- **Snapshot Gallery**: Automatic capture and organized display of anomalies
+- **Video Analysis**: Batch processing with detailed reporting
+ - **Data Exports**: PDF (ReportLab) + CSV + Audit Log export
+ - **Model Info**: Active model path & class list (optional small panel)
+
+### 🛡️ **Reliability & Performance**
+- **Error Handling**: Comprehensive error management with user-friendly messages
+- **Input Validation**: Robust validation for all user inputs and file uploads
+- **Memory Optimization**: Efficient memory usage preventing leaks
+- **Configuration System**: External config file for easy parameter tuning
+- **Logging System**: Complete logging for debugging and monitoring
+
+### 🔧 **Technical Excellence**
+- **Modular Architecture**: Clean separation of concerns with reusable components
+- **Configuration Management**: JSON-based configuration system
+- **Performance Monitoring**: Built-in performance tracking and optimization
+- **Cross-platform**: Windows, Linux, and macOS compatibility
+- **GPU Support**: CUDA-enabled for faster training and inference
+
+### 🔐 **Authentication & Roles**
+- Secure login (default users: `admin` / `admin123`, `proctor` / `proctor123`)
+- Role-based pages (Model Training / User Management / Audit Log restricted to admin)
+- Audit events persisted to `logs/audit_log.json`
+
+### 📄 **Reporting & Exports**
+- PDF report (summary table, detailed log, snapshot grid)
+- CSV export with metadata header rows
+- Audit log CSV export
+- All artifacts saved under `outputs/`
 
 ## 🎯 Detected Behaviors
 
@@ -40,14 +107,14 @@ An AI-powered real-time academic integrity monitoring system that uses computer 
 ## 📋 Prerequisites
 
 - Python 3.8 or higher
-- Webcam (for real-time monitoring)
 - GPU recommended for faster processing
+- Video files for analysis (MP4, AVI, MOV, MKV supported)
 
-## ⚡ Quick Start
+## ⚡ Quick Start (Basic App)
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/anomaly-detection-exam-hall.git
+   git clone https://github.com/Naveenexe/anomaly-detection-exam-hall.git
    cd anomaly-detection-exam-hall
    ```
 
@@ -56,57 +123,189 @@ An AI-powered real-time academic integrity monitoring system that uses computer 
    pip install -r requirements.txt
    ```
 
-3. **Run the application**
-   ```bash
-   streamlit run streamlit_app.py
-   ```
+3. **Run the basic application**
+  ```bash
+  streamlit run streamlit_app.py
+  ```
+
+4. **Run the enhanced application (with auth, reports, dashboard)**
+  ```bash
+  streamlit run streamlit_app_enhanced.py
+  ```
 
 4. **Access the web interface**
    - Open your browser and go to `http://localhost:8501`
 
-## 📁 Project Structure
+## 📁 Current Project Structure
 
 ```
-├── streamlit_app.py          # Main Streamlit application
-├── model_trainer.py          # CNN model training script
-├── video_analyzer.py         # Video analysis and processing
-├── requirements.txt          # Python dependencies
-├── best_classroom_model.h5   # Trained CNN model
-├── class_indices.json        # Class label mappings
-├── confusion_matrix.png      # Model performance visualization
-└── README.md                # Project documentation
+├── streamlit_app.py                # Basic Streamlit interface
+├── streamlit_app_enhanced.py       # Auth + dashboard + reporting
+├── src/                           # Core package
+│   ├── video_analyzer.py          # Video processing & anomaly detection
+│   ├── model_trainer.py           # CNN training logic
+│   ├── report_generator.py        # PDF/CSV/audit export logic
+│   ├── auth_manager.py            # Authentication & audit logging
+│   └── privacy_enhancer.py        # (Legacy) pixelate / black-box
+├── models/                        # Model artifacts
+│   ├── best_classroom_model.h5    # Preferred checkpoint (if exists)
+│   ├── classroom_behavior_model.h5# Fallback trained model
+│   └── class_indices.json         # Class label → index mapping
+├── outputs/                       # Generated artifacts
+│   ├── anomaly_report.json        # Latest analysis report (JSON)
+│   ├── anomaly_report.pdf         # Generated PDF report
+│   ├── anomaly_report.csv         # Generated CSV export
+│   └── anomaly_snapshots/         # Current run snapshots
+│       └── history/               # Archived previous run snapshots
+├── logs/
+│   ├── classroom_monitor.log      # Runtime / analysis logs
+│   └── audit_log.json             # Authentication / system events
+├── config/
+│   └── config.json                # (Optional) external configuration
+├── CNN_Dataset/                   # Training dataset folders per class
+├── requirements.txt
+├── README.md
+└── run_project.bat                # Convenience launcher
 ```
 
-## 🎮 Usage
+## 🔧 Key Improvements (Version 2.0)
 
-### Training the Model
+### ✅ **Bug Fixes**
+- **Model Loading**: Fixed memory leaks and inefficient reloading
+- **Progress Tracking**: Accurate progress bars showing actual processed frames
+- **Memory Management**: Eliminated memory leaks in session state
+- **Error Handling**: Comprehensive error handling throughout the application
+- **File Naming**: Fixed filename generation for special characters
+
+### 🎨 **UI Enhancements**
+- **Modern Design**: Complete UI overhaul with gradient themes and animations
+- **Responsive Layout**: Mobile-friendly design with adaptive components
+- **Interactive Charts**: Advanced Plotly visualizations with hover effects
+- **Professional Styling**: Custom CSS with smooth transitions and effects
+- **Analytics Dashboard**: Comprehensive real-time monitoring and reporting
+
+### ⚡ **Performance Optimizations**
+- **Configuration System**: External config file for easy parameter tuning
+- **Queue Management**: Increased buffer sizes for smooth video processing
+- **Memory Optimization**: Reduced memory footprint and improved caching
+- **Faster Processing**: Optimized frame processing and model inference
+
+### 🛡️ **Reliability Improvements**
+- **Input Validation**: Robust validation for all user inputs
+- **Error Recovery**: Graceful error handling with user-friendly messages
+- **Logging System**: Comprehensive logging for debugging and monitoring
+- **Configuration Management**: Flexible configuration without code changes
+
+## ⚙️ Configuration File (`config.json`)
+Minimal example (if using root or `config/config.json`):
+
+```json
+{
+  "model": {
+    "path": "models/classroom_behavior_model.h5",
+    "class_indices_path": "models/class_indices.json",
+    "image_size": [224, 224],
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "epochs": 50
+  },
+  "video_analysis": {
+    "default_frame_skip": 30,
+    "anomaly_threshold": 0.7,
+    "max_anomaly_snapshots": 50,
+    "snapshot_dir": "outputs/anomaly_snapshots"
+  },
+  "ui": {
+    "theme": "dark",
+    "max_displayed_anomalies": 9,
+    "chart_height": 400
+  }
+}
+```
+
+If `config.json` is missing, defaults are applied internally.
+
+## 🎮 Usage Guide
+
+### 🚀 **Quick Start**
+1. **Activate Environment**:
+   ```bash
+   cd classroom_monitor_env/Scripts
+   activate  # On Windows
+   # or
+   source activate  # On Linux/Mac
+   cd ../..
+   ```
+
+2. **Launch Application**:
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+
+3. **Access Interface**:
+   - Open browser to `http://localhost:8501`
+
+### 📚 **Detailed Usage**
+
+#### Training the Model
 ```bash
+# Via Streamlit UI (Recommended)
+streamlit run streamlit_app.py
+# Navigate to "🤖 Model Training"
+
+# Or via command line
 python model_trainer.py
 ```
 
-### Video Analysis
+#### Video Analysis
 ```bash
-python video_analyzer.py --input your_video.mp4
-```
-
-### Web Application
-```bash
+# Via Streamlit UI (Recommended)
 streamlit run streamlit_app.py
+# Navigate to "🎬 Video Analysis"
+# Upload video file and adjust parameters
+
+# Or via command line
+python video_analyzer.py
 ```
 
-## 📊 Model Performance
+#### Dashboard Analytics
+```bash
+# Via Streamlit UI
+streamlit run streamlit_app.py
+# Navigate to "📊 Dashboard" for comprehensive analytics
+```
+
+## 📊 Model Performance (Illustrative)
 
 - **Accuracy**: 90%+ on test dataset
 - **Classes**: 9 behavioral categories
 - **Architecture**: Convolutional Neural Network
 - **Training Data**: 3,000+ labeled images
 
-## 🔧 Configuration
+## 🧪 Model Loading Logic
+
+Both apps attempt to load the best available model in priority order:
+1. `models/best_classroom_model.h5`
+2. `models/classroom_behavior_model.h5`
+3. Root fallback filenames if above missing.
+
+`class_indices.json` is loaded to build an index→class reverse map. Distribution charts show all classes (zero counts included in bar chart) while the pie chart limits itself to behaviors actually detected.
+
+## 🔧 Adjusting Behavior & Thresholds
 
 The system can be configured for different environments:
 - Adjust confidence thresholds in `video_analyzer.py`
 - Modify alert sensitivity in `streamlit_app.py`
 - Customize behavior categories as needed
+
+## 🔍 Troubleshooting
+
+| Issue | Cause | Fix |
+|-------|-------|-----|
+| Only one behavior shown | Video content lacks other behaviors | Test with varied sample video |
+| Model not found | Files not moved to `models/` | Copy `.h5` + `class_indices.json` into `models/` |
+| Empty snapshots folder | No anomalies above threshold | Lower `anomaly_threshold` (e.g. 0.6) |
+| Audit log missing | Not yet created | Trigger a login/logout event |
 
 ## 🤝 Contributing
 
@@ -128,10 +327,104 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - your.email@example.com
+ Email - watarenaveen@gmail.com
 
-Project Link: [https://github.com/yourusername/anomaly-detection-exam-hall](https://github.com/yourusername/anomaly-detection-exam-hall)
+Project Link: [https://github.com/Naveenexe/anomaly-detection-exam-hall]
 
 ---
 
 ⭐ **Star this repository if you found it helpful!**
+
+---
+### 🚀 Free Deployment Guide (Streamlit Community Cloud)
+
+This project can be deployed **completely free** using Streamlit Community Cloud. Follow these steps:
+
+#### Prerequisites
+- GitHub account
+- Your code pushed to a public GitHub repository
+
+#### Step-by-Step Deployment
+
+1. **Prepare Your Repository**
+   ```bash
+   # Ensure all required files are committed
+   git add models/best_classroom_model.h5 models/class_indices.json
+   git add src/ .streamlit/ packages.txt requirements.txt
+   git commit -m "Prepare for deployment"
+   git push origin main
+   ```
+
+2. **Sign Up for Streamlit Community Cloud**
+   - Go to [share.streamlit.io](https://share.streamlit.io)
+   - Click "Continue with GitHub"
+   - Authorize Streamlit to access your repositories
+
+3. **Deploy Your App**
+   - Click "New app"
+   - Select your repository: `Naveenexe/anomaly-detection-exam-hall`
+   - Choose branch: `main`
+   - Main file path: `streamlit_app_enhanced.py` (or `streamlit_app.py` for basic)
+   - Click "Deploy"
+
+4. **Configure Advanced Settings (if needed)**
+   - Python version: 3.11
+   - Click "Advanced settings" before deploying
+   - Add secrets if you want custom credentials (optional)
+
+5. **Your App is Live!**
+   - You'll get a URL like: `https://your-app-name.streamlit.app`
+   - Share this URL for your final year project presentation
+
+#### Important Notes for Deployment
+
+- **Model Files**: Ensure `models/best_classroom_model.h5` and `models/class_indices.json` are committed (not in `.gitignore`)
+- **Dependencies**: `packages.txt` installs system libs for OpenCV on Linux
+- **File Size**: Git has 100MB per file limit. If your model is larger, use Git LFS:
+  ```bash
+  git lfs install
+  git lfs track "*.h5"
+  git add .gitattributes
+  ```
+- **Free Limits**: 1 GB RAM, 1 CPU, good for demos and presentations
+- **Runtime**: First load may take 2-3 minutes while installing dependencies
+
+#### Alternative Free Hosting Options
+
+1. **Hugging Face Spaces** (Better for large models)
+   - Go to [huggingface.co/spaces](https://huggingface.co/spaces)
+   - Create new Space → Streamlit
+   - Upload your files or connect GitHub
+   - More RAM (16GB free tier)
+
+2. **Railway** (with GitHub Student Pack)
+   - [railway.app](https://railway.app)
+   - $5/month free with GitHub Student Developer Pack
+   - Better for resource-intensive apps
+
+3. **Google Cloud Run** (Free tier: 2M requests/month)
+   - Requires Dockerfile (more complex setup)
+   - Good for production-grade deployment
+
+#### Recommended for Your Demo: Streamlit Community Cloud
+✅ Easiest setup (5 minutes)  
+✅ No credit card required  
+✅ Automatic HTTPS  
+✅ Auto-restarts on code push  
+✅ Perfect for academic presentations
+
+---
+- Real-time webcam streaming module re-introduction (removed stub `RealTimeAnalyzer`)
+- Model confusion matrix & training metrics panel inside enhanced app
+- Optional role management UI for password reset
+- Lightweight REST API for external integration
+
+---
+### 🧪 Quick Windows Commands
+```powershell
+python -m venv classroom_monitor_env
+& "./classroom_monitor_env/Scripts/Activate.ps1"
+pip install -r requirements.txt
+streamlit run streamlit_app_enhanced.py
+```
+

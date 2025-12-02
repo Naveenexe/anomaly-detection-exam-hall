@@ -36,15 +36,33 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Large files (optional - you can include these if needed)
-*.h5
-*.mp4
+# Model files (MUST commit for deployment)
+# Remove *.h5 exclusion to include models in repo
+# *.h5
 
-# Logs
+# Videos (exclude large test videos)
+*.mp4
+videos/
+
+# Logs and outputs (regenerated at runtime)
 *.log
+logs/*.json
+outputs/*.json
+outputs/*.pdf
+outputs/*.csv
+outputs/anomaly_snapshots/*.jpg
 
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Dataset (optional - exclude if too large)
+# Dataset (exclude if too large for Git; required for training only)
 CNN_Dataset/
+
+# Temporary and cache
+anomaly_snapshots/
+audit_log.json
+users.json
+config.json
+
+# Streamlit secrets (never commit)
+.streamlit/secrets.toml
