@@ -15,9 +15,9 @@ import time
 from PIL import Image
 import base64
 
-# Import our custom modules (using src package)
-from src.model_trainer import ClassroomBehaviorTrainer
-from src.video_analyzer import VideoAnalyzer
+# Import our custom modules
+from model_trainer import ClassroomBehaviorTrainer
+from video_analyzer import VideoAnalyzer
 
 # Page configuration
 st.set_page_config(

@@ -96,6 +96,48 @@ An advanced AI-powered academic integrity monitoring system that uses state-of-t
 8. **Using Copy Cheat** - Using unauthorized materials
 9. **Using Mobile** - Mobile phone usage during exam
 
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard Overview](screenshots/Screenshot%20(72).png)
+*Real-time monitoring dashboard with KPIs and quick actions*
+
+### Login & Authentication
+![Login Screen](screenshots/Screenshot%20(73).png)
+*Secure authentication with role-based access control*
+
+### Video Analysis
+![Video Analysis](screenshots/Screenshot%20(74).png)
+*Upload and analyze exam hall videos with adjustable parameters*
+
+### Anomaly Detection Results
+![Detection Results](screenshots/Screenshot%20(75).png)
+*Interactive timeline showing detected anomalies with confidence scores*
+
+### Behavior Distribution
+![Behavior Distribution](screenshots/Screenshot%20(76).png)
+*Visual analytics with pie charts and bar graphs*
+
+### Snapshot Gallery
+![Snapshot Gallery](screenshots/Screenshot%20(77).png)
+*Automatic capture and display of anomalous behaviors*
+
+### Reports & Export
+![Reports Page](screenshots/Screenshot%20(78).png)
+*Generate PDF and CSV reports with one click*
+
+### Model Training
+![Model Training](screenshots/Screenshot%20(79).png)
+*Admin interface for training new models*
+
+### User Management
+![User Management](screenshots/Screenshot%20(80).png)
+*Admin panel for managing users and roles*
+
+### Audit Log
+![Audit Log](screenshots/Screenshot%20(81).png)
+*Complete audit trail of system events and user actions*
+
 ## 🛠️ Technology Stack
 
 - **Deep Learning**: TensorFlow, Keras, CNN
@@ -336,84 +378,7 @@ Project Link: [https://github.com/Naveenexe/anomaly-detection-exam-hall]
 ⭐ **Star this repository if you found it helpful!**
 
 ---
-### 🚀 Free Deployment Guide (Streamlit Community Cloud)
-
-This project can be deployed **completely free** using Streamlit Community Cloud. Follow these steps:
-
-#### Prerequisites
-- GitHub account
-- Your code pushed to a public GitHub repository
-
-#### Step-by-Step Deployment
-
-1. **Prepare Your Repository**
-   ```bash
-   # Ensure all required files are committed
-   git add models/best_classroom_model.h5 models/class_indices.json
-   git add src/ .streamlit/ packages.txt requirements.txt
-   git commit -m "Prepare for deployment"
-   git push origin main
-   ```
-
-2. **Sign Up for Streamlit Community Cloud**
-   - Go to [share.streamlit.io](https://share.streamlit.io)
-   - Click "Continue with GitHub"
-   - Authorize Streamlit to access your repositories
-
-3. **Deploy Your App**
-   - Click "New app"
-   - Select your repository: `Naveenexe/anomaly-detection-exam-hall`
-   - Choose branch: `main`
-   - Main file path: `streamlit_app_enhanced.py` (or `streamlit_app.py` for basic)
-   - Click "Deploy"
-
-4. **Configure Advanced Settings (if needed)**
-   - Python version: 3.11
-   - Click "Advanced settings" before deploying
-   - Add secrets if you want custom credentials (optional)
-
-5. **Your App is Live!**
-   - You'll get a URL like: `https://your-app-name.streamlit.app`
-   - Share this URL for your final year project presentation
-
-#### Important Notes for Deployment
-
-- **Model Files**: Ensure `models/best_classroom_model.h5` and `models/class_indices.json` are committed (not in `.gitignore`)
-- **Dependencies**: `packages.txt` installs system libs for OpenCV on Linux
-- **File Size**: Git has 100MB per file limit. If your model is larger, use Git LFS:
-  ```bash
-  git lfs install
-  git lfs track "*.h5"
-  git add .gitattributes
-  ```
-- **Free Limits**: 1 GB RAM, 1 CPU, good for demos and presentations
-- **Runtime**: First load may take 2-3 minutes while installing dependencies
-
-#### Alternative Free Hosting Options
-
-1. **Hugging Face Spaces** (Better for large models)
-   - Go to [huggingface.co/spaces](https://huggingface.co/spaces)
-   - Create new Space → Streamlit
-   - Upload your files or connect GitHub
-   - More RAM (16GB free tier)
-
-2. **Railway** (with GitHub Student Pack)
-   - [railway.app](https://railway.app)
-   - $5/month free with GitHub Student Developer Pack
-   - Better for resource-intensive apps
-
-3. **Google Cloud Run** (Free tier: 2M requests/month)
-   - Requires Dockerfile (more complex setup)
-   - Good for production-grade deployment
-
-#### Recommended for Your Demo: Streamlit Community Cloud
-✅ Easiest setup (5 minutes)  
-✅ No credit card required  
-✅ Automatic HTTPS  
-✅ Auto-restarts on code push  
-✅ Perfect for academic presentations
-
----
+### ✅ Next Steps / Roadmap
 - Real-time webcam streaming module re-introduction (removed stub `RealTimeAnalyzer`)
 - Model confusion matrix & training metrics panel inside enhanced app
 - Optional role management UI for password reset
