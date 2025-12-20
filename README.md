@@ -99,51 +99,51 @@ An advanced AI-powered academic integrity monitoring system that uses state-of-t
 ## 📸 Screenshots
 
 ### Dashboard Overview
-![Dashboard Overview](screenshots/Screenshot%20(72).png)
+![Dashboard Overview](./screenshots/Screenshot%20(72).png)
 *Real-time monitoring dashboard with KPIs and quick actions*
 
 ### Video Analysis Interface
-![Video Analysis](screenshots/Screenshot%20(74).png)
+![Video Analysis](./screenshots/Screenshot%20(74).png)
 *Upload and analyze exam hall videos with adjustable parameters*
 
 ### Anomaly Detection Results
-![Detection Results](screenshots/Screenshot%20(75).png)
+![Detection Results](./screenshots/Screenshot%20(75).png)
 *Interactive timeline showing detected anomalies with confidence scores*
 
 ### Behavior Distribution Analytics
-![Behavior Distribution](screenshots/Screenshot%20(76).png)
+![Behavior Distribution](./screenshots/Screenshot%20(76).png)
 *Visual analytics with pie charts and bar graphs*
 
 ### Snapshot Gallery
-![Snapshot Gallery](screenshots/Screenshot%20(77).png)
+![Snapshot Gallery](./screenshots/Screenshot%20(77).png)
 *Automatic capture and display of anomalous behaviors*
 
 ### Reports & Export
-![Reports Page](screenshots/Screenshot%20(78).png)
+![Reports Page](./screenshots/Screenshot%20(78).png)
 *Generate PDF and CSV reports with one click*
 
 ### Model Training Interface
-![Model Training](screenshots/Screenshot%20(79).png)
+![Model Training](./screenshots/Screenshot%20(79).png)
 *Admin interface for training and managing models*
 
 ### User Management Panel
-![User Management](screenshots/Screenshot%20(80).png)
+![User Management](./screenshots/Screenshot%20(80).png)
 *Admin panel for managing users and roles*
 
 ### Audit Log Viewer
-![Audit Log](screenshots/Screenshot%20(81).png)
+![Audit Log](./screenshots/Screenshot%20(81).png)
 *Complete audit trail of system events and user actions*
 
 ### Live Monitor - Frame Analysis
-![Live Monitor Frame 1](screenshots/Screenshot%20(92).png)
+![Live Monitor Frame 1](./screenshots/Screenshot%20(92).png)
 *Real-time per-frame prediction overlay with confidence scores*
 
 ### Dashboard Analytics
-![Dashboard Analytics 1](screenshots/Screenshot%20(96).png)
+![Dashboard Analytics 1](./screenshots/Screenshot%20(96).png)
 *Comprehensive analytics and performance metrics*
 
 ### Advanced Analytics Dashboard
-![Dashboard Analytics 2](screenshots/Screenshot%20(97).png)
+![Dashboard Analytics 2](./screenshots/Screenshot%20(97).png)
 *Detailed behavior classification and trend analysis*
 
 ## 🛠️ Technology Stack
