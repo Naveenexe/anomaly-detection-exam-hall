@@ -45,7 +45,7 @@ def login_page():
     <div style='text-align: center; padding: 50px 0;'>
         <h1 style='font-size: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
                    -webkit-background-clip: text; -webkit-text-fill-color: transparent;'>
-            🎯 Exam Hall Monitoring System
+            🎯 Anomaly Detection in Exam Hall
         </h1>
         <p style='color: #666; font-size: 1.2rem;'>Secure Login Required</p>
     </div>

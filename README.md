@@ -98,15 +98,11 @@ An advanced AI-powered academic integrity monitoring system that uses state-of-t
 
 ## 📸 Screenshots
 
-### Dashboard
+### Dashboard Overview
 ![Dashboard Overview](screenshots/Screenshot%20(72).png)
 *Real-time monitoring dashboard with KPIs and quick actions*
 
-### Login & Authentication
-![Login Screen](screenshots/Screenshot%20(73).png)
-*Secure authentication with role-based access control*
-
-### Video Analysis
+### Video Analysis Interface
 ![Video Analysis](screenshots/Screenshot%20(74).png)
 *Upload and analyze exam hall videos with adjustable parameters*
 
@@ -114,7 +110,7 @@ An advanced AI-powered academic integrity monitoring system that uses state-of-t
 ![Detection Results](screenshots/Screenshot%20(75).png)
 *Interactive timeline showing detected anomalies with confidence scores*
 
-### Behavior Distribution
+### Behavior Distribution Analytics
 ![Behavior Distribution](screenshots/Screenshot%20(76).png)
 *Visual analytics with pie charts and bar graphs*
 
@@ -126,17 +122,29 @@ An advanced AI-powered academic integrity monitoring system that uses state-of-t
 ![Reports Page](screenshots/Screenshot%20(78).png)
 *Generate PDF and CSV reports with one click*
 
-### Model Training
+### Model Training Interface
 ![Model Training](screenshots/Screenshot%20(79).png)
-*Admin interface for training new models*
+*Admin interface for training and managing models*
 
-### User Management
+### User Management Panel
 ![User Management](screenshots/Screenshot%20(80).png)
 *Admin panel for managing users and roles*
 
-### Audit Log
+### Audit Log Viewer
 ![Audit Log](screenshots/Screenshot%20(81).png)
 *Complete audit trail of system events and user actions*
+
+### Live Monitor - Frame Analysis
+![Live Monitor Frame 1](screenshots/Screenshot%20(92).png)
+*Real-time per-frame prediction overlay with confidence scores*
+
+### Dashboard Analytics
+![Dashboard Analytics 1](screenshots/Screenshot%20(96).png)
+*Comprehensive analytics and performance metrics*
+
+### Advanced Analytics Dashboard
+![Dashboard Analytics 2](screenshots/Screenshot%20(97).png)
+*Detailed behavior classification and trend analysis*
 
 ## 🛠️ Technology Stack
 
