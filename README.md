@@ -399,5 +399,4 @@ python -m venv classroom_monitor_env
 & "./classroom_monitor_env/Scripts/Activate.ps1"
 pip install -r requirements.txt
 streamlit run streamlit_app_enhanced.py
-```
 
